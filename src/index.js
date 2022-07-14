@@ -60,6 +60,6 @@ export const assignLockedValues = (object, propertyName) => {
 export const freezeAllInObject = (object) => {
   const copiedObject = {...object};
   Object.freeze(copiedObject);
-  return copiedObject(object);
+  return copiedObject;
   };
 
