@@ -47,8 +47,8 @@ export const assignLockedValues = (object, propertyName) => {
     enumerable: true,
     configurable: true,
     });
+    }
     return copiedObject;
-};
 };
   
 /**
