@@ -10,7 +10,7 @@
  */
 export const getKeysByDescriptor = (object, descriptor) => {
     const descriptors = Object.getOwnPropertyDescriptors(object);
-    return Object.entires(descriptors).filter(([key, value]) => {
+    return Object.entries(descriptors).filter(([key, value]) => {
     return value[descriptor];
     }).map(([key]) => key);
   };
