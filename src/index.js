@@ -49,7 +49,7 @@ export const assignLockedValues = (object, propertyName) => {
     });
     return copiedObject;
 };
- 
+};
   
 /**
  * Принимает объект и возвращает его копию, только абсолютно замороженную
