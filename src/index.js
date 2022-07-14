@@ -1,4 +1,18 @@
 /**
+ * Принимает объект и возвращает его копию, только абсолютно замороженную
+ * Нельзя удалять свойства, добавлять и редактировать
+ * @param {Object} object
+ * @returns {Object}
+ */
+export const freezeAllInObject = (object) => {
+  const copiedObject = {...object};
+  Object.freeze(copiedObject);
+  return copiedObject;
+  };
+
+
+
+/**
  * Принимает в себя два аргумента, один из них принимает объект, второй строку с названием
  * дескриптора. Должно вернуть массив строк, которыми являются ключи объекта соответствующие
  * дескриптору. То есть если у нас есть два свойства у которых writable true(если мы передали арг
@@ -50,14 +64,4 @@ export const assignLockedValues = (object, propertyName) => {
     return copiedObject;
 };
 
-/**
- * Принимает объект и возвращает его копию, только абсолютно замороженную
- * Нельзя удалять свойства, добавлять и редактировать
- * @param {Object} object
- * @returns {Object}
- */
-export const freezeAllInObject = (object) => {
-  const copiedObject = {...object};
-  Object.freeze(copiedObject);
-  return copiedObject;
-  };
+
