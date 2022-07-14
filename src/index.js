@@ -21,7 +21,7 @@ export const getKeysByDescriptor = (object, descriptor) => {
  * @returns {boolean}
  */
 export const isObjectAnyFrozen = (object) => {
-  return Oject.isFrozen(object);
+  return Object.isFrozen(object);
   };
 
 /**
