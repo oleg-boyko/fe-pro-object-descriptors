@@ -56,7 +56,7 @@ export const assignLockedValues = (object, propertyName) => {
  * @param {Object} object
  * @returns {Object}
  */
-export const freezeAllInObject = (object) => {
+ const freezeAllInObject = (object) => {
   const copiedObject = {...object};
   Object.freeze(copiedObject);
   return copiedObject;
